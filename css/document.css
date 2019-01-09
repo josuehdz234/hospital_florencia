@@ -1,0 +1,237 @@
+/*
+    |   This styles was created by josué Hernández
+    |   Proyect: Florencia Hospital
+    |   Version: 1.0
+    |   Date : 08/01/2019
+*/
+@import url('https://fonts.googleapis.com/css?family=Signika:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+@keyframes size{
+    from{
+        transform: scale(.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;    
+    font-family: 'Signika', sans-serif !important;
+}
+
+.navbar{        
+    padding: 20px;
+    background: transparent !important; 
+    -webkit-transition: background-color 500ms, color 500ms;
+    -moz-transition: background-color 500ms, color 500ms;
+    -o-transition: background-color 500ms, color 500ms;
+    transition: background-color 500ms, color 500ms;
+}
+
+.navbar > .container > .navbar-brand{
+    color: #000;
+}
+
+.navbar > .container > #navbarResponsive > ul > li > a{
+    color: #000 !important;
+}
+
+.navbar-xl{    
+    background: #ffffff !important;
+    
+}
+
+header{    
+    height: 100vh;
+    background: url(../img/bg/bg-pattern.png), #6effbf !important;    
+    position: relative;    
+}
+header .container{
+    animation: size .4s ease-in;
+    z-index: 1;
+}
+
+header .container img{
+    margin: 10px;    
+    width: 400px;
+}
+
+header .container > p{
+    color: #000000;
+}
+
+header .container button{
+    background: transparent;
+    border: 2px solid #000;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #000;
+    margin-top: 40px;
+    outline: none;
+    transition: all .4s ease-in;
+}
+header .container button:hover{
+    transition: all .4s ease-in;
+    background: #000000;
+    color: #6effbf;
+}
+
+header .container .lead{
+    margin-top: 30px;
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+header .slice{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-weight: lighter;
+}
+
+header .slice i{
+    display: block;
+}
+
+header .slice i::before{
+    margin-left: 0;
+}
+
+/*!
+ | About
+*/
+#about{
+    position: relative;
+    height: 90vh;
+}
+#about > .seguros{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+#about > .seguros > ul > li{
+    display: inline-block;
+    margin: 20px;
+}
+
+
+/*!
+   |contactForm
+*/
+#contactForm{
+    font-family: 'Open Sans', sans-serif !important;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;    
+    width: 40%;
+    margin: auto
+}
+#contactForm > h4{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#contactForm > .control-group > .controls > input{
+    border: none;    
+    padding: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #eeeeee;
+    border-radius: 100px;
+}
+
+#contactForm > .control-group > .controls > textarea{
+    border: none;    
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #eeeeee;
+    border-radius: 10px;
+}
+
+#contact{
+    background: url(../img/bg/bg.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+}
+
+#contact::before{
+    content: '';
+    background: #6effbfbf;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#contact > .container{
+    margin: auto;
+}
+
+/*!
+    | cd
+*/
+.cd img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.cd h3{
+    font-weight: lighter;
+}
+
+.cd p{
+    font-weight: lighter;
+}
+
+/*
+ | services
+*/
+
+/* general styles */
+.v-wrapper{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.bg_pantone_31{
+    background: #00acc8 !important;
+    color: #ffffff;
+}
+.txt_pantone_31{
+    color: #00acc8 !important;
+}
+.bg_pantone_74{
+    background: #007298 !important;
+}
+.txt_pantone_74{
+    color: #007298 !important;
+}
+.bg_pantone_11{
+    background: #00476b !important;
+}
+.txt_pantone_11{
+    color: #00476b !important;
+}
